@@ -15,8 +15,10 @@ public class Ipad {
 	}
 	
 	static void check() {
-		//System.out.println(brand + "에서 만든 아이패드");
-		System.out.println(Ipad.brand + "에서 만든 아이패드");
+		System.out.println(brand + "에서 만든 아이패드");
+		//static은 주체 기준이 없이 호출 -> this 특정 주체를 나타낼 수 없다.
+		//System.out.println(owner + "에서 만든 아이패드"); //static -> 인스턴스 접근 X
+//		System.out.println(Ipad.brand + "에서 만든 아이패드");
 	}
 }
 
