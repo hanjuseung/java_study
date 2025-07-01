@@ -11,17 +11,17 @@ public class Student {
 	String id;
 	int grade;
 	String jumin;
-	Date birthday;
+	String birthday;
 	String tel;
 	int height;
 	int weight;
 	int deptno1;
-	int deptno2;
+	Integer deptno2;
 	int profno;
 	
 	public Student() {}
 	
-	public Student(int studno, String name, String id, int grade, String jumin, Date birthday, String tel, int height,
+	public Student(int studno, String name, String id, int grade, String jumin, String birthday, String tel, int height,
 			int weight, int deptno1, int deptno2, int profno) {
 		super();
 		this.studno = studno;
@@ -67,10 +67,10 @@ public class Student {
 	public void setJumin(String jumin) {
 		this.jumin = jumin;
 	}
-	public Date getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
-	public void setBirthday(Date birthday) {
+	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 	public String getTel() {
@@ -97,10 +97,10 @@ public class Student {
 	public void setDeptno1(int deptno1) {
 		this.deptno1 = deptno1;
 	}
-	public int getDeptno2() {
+	public Integer getDeptno2() {
 		return deptno2;
 	}
-	public void setDeptno2(int deptno2) {
+	public void setDeptno2(Integer deptno2) {
 		this.deptno2 = deptno2;
 	}
 	public int getProfno() {
